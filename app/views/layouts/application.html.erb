@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TestApp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <header>
+    <div class="header-logo">
+        <h2>test_app</h2>
+    </div>
+    <ul class="header-menus ul">
+        <li>投稿一覧</li>
+    </ul>
+</header>
+  <body>
+    <%= yield %>
+  </body>
+</html>
